@@ -38,8 +38,8 @@ interface GeneratedImage {
     error?: string;
 }
 
-const primaryButtonClasses = "font-permanent-marker text-xl text-center text-black bg-yellow-400 py-3 px-8 rounded-sm transform transition-transform duration-200 hover:scale-105 hover:-rotate-2 hover:bg-yellow-300 shadow-[2px_2px_0px_2px_rgba(0,0,0,0.2)]";
-const secondaryButtonClasses = "font-permanent-marker text-xl text-center text-white bg-white/10 backdrop-blur-sm border-2 border-white/80 py-3 px-8 rounded-sm transform transition-transform duration-200 hover:scale-105 hover:rotate-2 hover:bg-white hover:text-black";
+const primaryButtonClasses = "font-permanent-marker text-lg sm:text-xl text-center text-black bg-yellow-400 py-2 sm:py-3 px-4 sm:px-8 rounded-sm transform transition-transform duration-200 hover:scale-105 hover:-rotate-2 hover:bg-yellow-300 shadow-[2px_2px_0px_2px_rgba(0,0,0,0.2)]";
+const secondaryButtonClasses = "font-permanent-marker text-lg sm:text-xl text-center text-white bg-white/10 backdrop-blur-sm border-2 border-white/80 py-2 sm:py-3 px-4 sm:px-8 rounded-sm transform transition-transform duration-200 hover:scale-105 hover:rotate-2 hover:bg-white hover:text-black";
 
 const useMediaQuery = (query: string) => {
     const [matches, setMatches] = useState(false);
@@ -365,7 +365,7 @@ function App() {
                 {(appState === 'generating' || appState === 'results-shown') && (
                      <>
                         {isMobile ? (
-                            <div className="w-full max-w-sm flex-1 overflow-y-auto mt-4 space-y-8 p-4">
+                            <div className="w-full max-w-[90vw] flex-1 overflow-y-auto mt-4 space-y-4 sm:space-y-8 p-4">
                                 {DECADES.map((decade) => (
                                     <div key={decade} className="flex justify-center">
                                          <PolaroidCard
@@ -383,7 +383,7 @@ function App() {
                                 ))}
                             </div>
                         ) : (
-                            <div ref={dragAreaRef} className="relative w-full max-w-5xl h-[600px] mt-4">
+                            <div ref={dragAreaRef} className="relative w-full max-w-5xl min-h-[70vh] max-h-[80vh] mt-4">
                                 {DECADES.map((decade, index) => {
                                     const { top, left, rotate } = POSITIONS[index];
                                     return (
