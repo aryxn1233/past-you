@@ -1,6 +1,7 @@
 # Past you
 
 Past you is a modern React application built with Vite and TypeScript. It appears to be an interactive photo album or memory-sharing app, featuring polaroid-style cards, draggable UI elements, and integration with Google's Gemini AI service for enhanced functionality, such as generating captions or processing images.
+Visit  directly :- https://past-you.vercel.app/
 
 ## Features
 - **Polaroid Cards**: Display photos or memories in a nostalgic polaroid format.
