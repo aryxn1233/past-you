@@ -29,9 +29,9 @@ const Footer = () => {
         <footer className="fixed bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-3 z-50 text-neutral-300 text-xs sm:text-sm border-t border-white/10">
             <div className="max-w-screen-xl mx-auto flex justify-end items-center gap-4 px-4">
                 <div className="hidden lg:flex items-center gap-2 text-neutral-400 text-right min-w-0">
-                    <div>Created by: Aryxn1123</div>
+                    <div>Created by: Aryxn1233</div>
                     <button
-                        onClick={() => window.open('https://github.com/aryxn1123', '_blank')}
+                        onClick={() => window.open('https://github.com/aryxn1233', '_blank')}
                         className="ml-2 px-2 py-1 rounded bg-neutral-700 hover:bg-neutral-600 text-neutral-200 text-xs transition"
                         aria-label="Open GitHub Profile"
                     >
